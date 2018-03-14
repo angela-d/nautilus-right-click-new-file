@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 # create the Templates directory in the home folder, if it does not exist
 if [ -f Templates.tar.gz ];
