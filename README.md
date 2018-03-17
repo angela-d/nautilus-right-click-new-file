@@ -70,7 +70,7 @@ nautilus -q && nautilus &
 In some instances, you may have to log out and log back in.
 
 #### (optional) Prevent Nautilus from breaking desktop icons ####
-In Gnome 3.26, Nautilus will be breaking desktop icons.
+In 3.26, Nautilus will be breaking desktop icons.
 
 To prevent this from occurring, prevent Nautilus from updating (if you've already updated, you'll have to downgrade the pacakge in order for the hold to be effective).
 
