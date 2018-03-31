@@ -14,7 +14,7 @@ After:
 ## Download the script
 Run via terminal:
 ```bash
-git clone https://github.com/z0m8i3/nautilus-right-click-new-file.git && cd nautilus-right-click-new-file
+git clone https://github.com/angela-d/nautilus-right-click-new-file.git && cd nautilus-right-click-new-file
 ```
 Confirm you're in the right directory:
 ```bashrc
