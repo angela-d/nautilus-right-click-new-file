@@ -1,7 +1,7 @@
 # Right-click New File Context Menu for Nautilus / Gnome File Manager
 Super easy and light script to automate adding a context menu to Nautilus / Gnome Files to create a new document.
 
-Built in GNOME nautilus 3.22.3; not tested in other versions.
+Built in GNOME Nautilus 3.22.3 (current version used in Debian Stable); not tested in other versions (see footer for Nautilus 3.26+).
 
 Before:
 
@@ -11,7 +11,15 @@ After:
 
 ![nautilus new file context menu - after](./img/nautilus-right-click-new-file.png)
 
-## Download the script
+### Default Menu Options
+- Bash Script
+- PHP Script
+- Text File
+- Libre Office Word Document
+
+Any menu item ins interchangable and can be removed.
+
+## Download the automation script
 Run via terminal:
 ```bash
 git clone https://github.com/angela-d/nautilus-right-click-new-file.git && cd nautilus-right-click-new-file
@@ -22,19 +30,20 @@ ls
 ```
 You should see:
 ```html
-img  LICENSE  nautilus-newfile-contextmenu.sh  README.md  Templates.tar.gz
+img  LICENSE  automate.sh  README.md  Templates.tar.gz
 ```
 
 Now, run the script:
 ```bashrc
-./nautilus-newfile-contextmenu.sh
+./automate.sh
 ```
 
 That's all there is to it!
 
 ***
 
-# (optional) Manual Instructions (if you don't want to run the automated script)
+# (optional) Manual Instructions
+## (if you don't want to run the automated script)
 * Download Templates.tar.gz and extract
 ```bash
 tar -xvzf Templates.tar.gz
@@ -52,9 +61,7 @@ to generate the user-dirs config file.
 Done!
 
 ## Note
-Each of the template files have a prefix like `#!/usr/bin/env php` when you open the file (except the Text file & Writer/Word .doc) - for any of the files, short of the empty bash file, this prefix is not required and can be deleted when you've created a new file on your desktop or file manager.
-
-These were added so Linux could interpret the type of file and automatically create the context menu icon without any extra code.
+Each of the template files have a prefix like `#!/bin/bash` or `<?php` when you open the file (except the Text file & Writer/Word .doc) - while standard for the script type in question, it is also used so the operating system could interpret the type of file and automatically create the context menu icon without any extra code.
 
 ***
 
@@ -78,6 +85,6 @@ In Debian / Ubuntu (and deriatives):
 ```bash
 apt-mark hold nautilus
 ```
-Note: This will prevent the Nautilus package from updating, you will not receive future bugfixes until you undo the hold.
+Note: This will prevent the Nautilus package from updating, you will not receive future bug or security fixes until you undo the hold.
 
 Ubuntu users: [Ubuntu 18.04 LTS will be sticking with an older version of Nautilus](https://www.omgubuntu.co.uk/2018/01/ubuntu-18-04-lts-will-ship-older-version-nautilus) due to the desktop icons being taken out.
