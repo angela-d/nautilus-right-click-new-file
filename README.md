@@ -48,7 +48,7 @@ That's all there is to it!
 ```bash
 tar -xvzf Templates.tar.gz
 ```
-* Move the extracted files (templates) into /home/Templates/
+* Move the extracted files (templates) into /home/youruser/Templates/
 
 (in Nautilus; Open File Manager -> Click Home on the left -> If *Templates* folder does not exist, create it)
 
@@ -68,7 +68,7 @@ Each of the template files have a prefix like `#!/bin/bash` or `<?php` when you 
 #### (optional) Customize your Context Menu ####
 In Nautilus, navigate to the Home directory and then Templates.
 
-Here, you can place your dummy files (templates) in folders for easy sorting, or add new ones.
+In the **Templates** directory, you can place your dummy files (templates) in folders for easy sorting, or add new ones.
 
 If your changes are not instantaneous, restart Nautilus:
 ```bash
