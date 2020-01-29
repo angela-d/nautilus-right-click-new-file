@@ -1,7 +1,7 @@
 # Right-click New File Context Menu for Nautilus / Gnome File Manager
 Super easy and light script to automate adding a context menu to Nautilus / Gnome Files to create a new document.
 
-Built in GNOME Nautilus 3.22.3 (current version used in Debian Stable); not tested in other versions (see footer for Nautilus 3.26+).
+Built in GNOME Nautilus 3.22.3 (current version used in Debian Stretch); not tested in other versions (see footer for Nautilus 3.26+).
 
 Before:
 
@@ -16,8 +16,9 @@ After:
 - PHP Script
 - Text File
 - Libre Office Word Document
+- Markdown Document
 
-Any menu item ins interchangable and can be removed.
+Any menu item ins interchangeable and can be removed.
 
 ## Download the automation script
 Run via terminal:
@@ -37,6 +38,11 @@ Now, run the script:
 ```bashrc
 ./automate.sh
 ```
+
+If you've already used this and want to update to get the Markdown Document automagically installed, update your git repo or do a fresh clone and follow the above steps.
+
+Updating:
+![Updating](img/updating.png)
 
 That's all there is to it!
 
