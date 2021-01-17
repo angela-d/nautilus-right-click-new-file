@@ -18,7 +18,7 @@ then
 			customPath=$XDG_TEMPLATES_DIR
 			echo -e "\nYour Templates path for your language is" $customPath
 			
-				# check if the custom path already exits
+				# check if the custom path already exists
 				if [ -d "$customPath" ];
 				then
 					# directory exists; merge
@@ -26,7 +26,7 @@ then
 					mv -i Templates/* $customPath
 					rm -rf Templates
 				else
-					# directory doesn't exit; creating and moving files
+					# directory doesn't exist; creating and moving files
 					mkdir $customPath
 					mv Templates/* $customPath
 					rm -rf Templates
