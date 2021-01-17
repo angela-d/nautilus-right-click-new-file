@@ -16,14 +16,14 @@ then
 			# this config already exists; append the entry
 			source ~/.config/user-dirs.dirs
 			customPath=$XDG_TEMPLATES_DIR
-			echo "Your Templates path for your language is" $customPath
-				
+			echo -e "\nYour Templates path for your language is" $customPath
+			
 				# check if the custom path already exits
 				if [ -d "$customPath" ];
 				then
 					# directory exists; merge
-					echo "Custom path already exists. Merging files..."
-					mv Templates/* $customPath
+					echo -e "Custom path already exists. Merging files...\n(If you already do have a file with the same file name in that target directory, you'll be prompted to choose which one to keep)"
+					mv -i Templates/* $customPath
 					rm -rf Templates
 				else
 					# directory doesn't exit; creating and moving files
