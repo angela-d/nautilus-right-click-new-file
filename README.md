@@ -56,7 +56,7 @@ tar -xvzf Templates.tar.gz
 ```
 * Move the extracted files (templates) into /home/youruser/Templates/
 
-(in Nautilus; Open File Manager -> Click Home on the left -> If *Templates* folder does not exist, create it)
+(in Nautilus; Open File Manager -> Click Home on the left -> If *Templates* folder does not exist, create it. If you're using a non-english language, change the name accordingly, e.g. */home/youruser/Vorlagen/* in a german environment. Creating *~/Templates/* in a non-english environment won't have any effect.)
 
 * If your changes to do not automatically appear, log out or run:
 ```bash
