@@ -11,7 +11,8 @@ then
 	if [[ ! -f ~/.config/user-dirs.dirs ]];
 		then
 			xdg-user-dirs-update
-			echo "Config file created..."
+			echo -e "Config file created. Restarting script to add entries.\n\n"
+			exec ./automateChanged.sh
 		else
 			# this config already exists; append the entry
 			source ~/.config/user-dirs.dirs
