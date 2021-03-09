@@ -1,7 +1,9 @@
-# Right-click New File Context Menu for Nautilus / Gnome File Manager
+# Right-click New File Context Menu for Nautilus / Nemo / Gnome File Manager
 Super easy and light script to automate adding a context menu to Nautilus / Gnome Files to create a new document.
 
-Built in GNOME Nautilus 3.22.3 (current version used in Debian Stretch); not tested in other versions (see footer for Nautilus 3.26+).
+Although this script was originally built for a now-ancient version of Nautilus, it still works for current versions of Nautilus *and* Nemo file managers, as late as GNOME Shell 3.38.3
+
+***
 
 Before:
 
@@ -81,16 +83,3 @@ If your changes are not instantaneous, restart Nautilus:
 nautilus -q && nautilus &
 ```
 In some instances, you may have to log out and log back in.
-
-#### (optional) Prevent Nautilus from breaking desktop icons ####
-In 3.26, Nautilus will be breaking desktop icons.
-
-To prevent this from occurring, prevent Nautilus from updating (if you've already updated, you'll have to downgrade the pacakge in order for the hold to be effective).
-
-In Debian / Ubuntu (and deriatives):
-```bash
-apt-mark hold nautilus
-```
-Note: This will prevent the Nautilus package from updating, you will not receive future bug or security fixes until you undo the hold.
-
-Ubuntu users: [Ubuntu 18.04 LTS will be sticking with an older version of Nautilus](https://www.omgubuntu.co.uk/2018/01/ubuntu-18-04-lts-will-ship-older-version-nautilus) due to the desktop icons being taken out.
